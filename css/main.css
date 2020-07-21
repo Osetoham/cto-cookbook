@@ -98,6 +98,8 @@ img{
 
 #navbar .container .logo{
     margin-top: 60px;
+    width: 80%;
+    height: auto;
 }
 #navbar .items-link{
     display: flex;
@@ -618,6 +620,8 @@ img{
 
 #footer .container .footer-img{
   margin-top: 5px;
+  width: 90px;
+  height: auto;
  
 }
 
