@@ -1,0 +1,321 @@
+/* Utility */
+.heading{
+    font-size: 35px;
+    width: 100%;
+    line-height: 45px;
+}
+
+
+/* Nav-bar */
+#navbar .container{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+#navbar .container .logo{
+    margin-left: 1rem;
+}
+
+#navbar .container .cto{
+    display: none;
+}
+
+#navbar .items-link{
+    position: fixed;
+    margin-top: 20px;
+    padding-top: 40PX;
+    padding-left: 30px;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    top: -20px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s ease;
+    background-color:#1C1C1C;
+    z-index: 1;
+
+}
+
+#navbar .items-link label[for=check] {
+    margin: 20px 20px 0 auto;
+}
+
+#navbar .items-link label[for=check] svg{
+   width: 50px;
+   color: #fff;
+}
+#navbar .items-link li{
+    padding-right: 30px;
+    text-align: center;
+  
+}
+
+#navbar .items-link li a{
+    padding: .5rem 1rem;
+}
+
+
+
+.checkbtn{
+    display: block;
+    margin-right: 5px;
+}
+
+#check:checked ~ .items-link{
+    left: 0;
+}
+
+
+
+/* Section 1 */
+#section .container{
+    flex-direction: column;
+    margin-top: -20px;
+    
+}
+#section .container div{
+    flex: none;
+}
+
+#section .container .img{
+    width: 100%;
+    height: 300px;
+    
+}
+
+#section p, h2{
+    margin-top: 24px;
+}
+
+#section .content{
+  background: none;
+  transform: none;
+  width: 100%;
+   
+}
+
+#section h2{
+    margin-bottom: 0px;
+}
+
+#section .button{
+    padding-bottom: 80px;
+   
+}
+
+#section:nth-child(odd) .container{
+    flex-direction: column
+
+}
+
+.margin-bottom{
+   margin-bottom: 90PX;
+}
+
+/* issue section */
+/* section 1 */
+
+#issue .container {
+    margin-top: 0px;
+} 
+
+#issue h2{
+    font-size: 25px;
+}
+
+#issue .container .text-content{
+    width: 100%;
+    font-size: 1rem;
+}
+
+/*Section 2 */
+
+#issue .issue-container{
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#issue .issue-container .text-content{
+    margin-top: 10px;
+    
+}
+
+#issue .issue-container img{
+    width: 100%;
+    margin-top: 50px;
+    margin: 77px auto 77px auto;
+}
+
+#issue .right{
+    padding-left: 20px;
+   
+}
+
+
+#issue .issue-container h2{
+    width: unset;
+    font-size: 30px;
+    line-height: 50px;
+   
+}
+
+
+#issue .issue-container .text-content{
+    width: unset;
+    
+}
+
+#issue .button{
+    padding-top: 40px;
+    margin-bottom: 130px;
+}
+
+/* Section 3 */
+
+#projects .projects-grid{
+   grid: none;
+}
+
+#projects .projects-grid .project-cards .project-card{
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+#projects .projects-grid .text{
+    padding: 20px 10px;
+}
+
+
+#projects .project-cards:nth-child(even) {
+    margin-top: 0px;
+}
+
+
+/* More page */
+/* Section 1 */
+
+#more .middle-container{
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+#more .more-container .image{
+    margin-top: 0px
+}
+
+#more .more-container img{
+    width: 100%;
+    height: 420px;
+}
+
+#more .more-container .flex{
+   justify-content: space-around;
+}
+
+#more .more-container .flex .items{
+    margin: 30px 0px;
+}
+
+/* Section 3 */
+#description .middle-container{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#description img{
+    transform: translate(0, 49px);
+
+} 
+/* Section 4 */
+#more .more-container .base1{
+    width: 100%;
+}
+
+#more .more-container .base2{
+    width: 100%;
+    
+} 
+
+#more .more-container .flex:nth-child(odd){
+  flex-direction: column;
+  
+}
+
+/* Section 5 */
+section .middle-container{
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+/* Section 7 */
+#read .container .read-head{
+    margin-top: 50px;
+}
+#read .container .text{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+#read .container .read-content{
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+#read .container .text .name{
+    padding-top: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+
+
+#footer{
+    width: 100%;
+}
+
+#footer .container,
+#footer .container .footer-img,
+#footer .container .footer-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+#footer .container p{
+    margin-bottom: 20px;
+ 
+}
+
+
+#footer .container .footer-img{
+   margin-right: 40px;
+   margin-bottom: 20px;
+   order: -1;
+}
+
+#footer .container .footer-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+
+ 
+
+   
+
+
+

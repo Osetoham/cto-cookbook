@@ -1,0 +1,637 @@
+:root{
+    --primary-color: #141414;
+    --hover-color: rgba(255, 255, 255, 0.5);
+    --bgimg-color:  #1C1C1C;
+
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    object-fit: cover;
+    object-position: center;
+} 
+
+body{
+    background-color: var( --primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+img{
+    width: 100%;
+}
+
+/* Utilities */
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.issue-container{
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.more-container{
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+.middle-container{
+    max-width: 626px;
+    margin: 0 auto;
+}
+.project{
+    background: var(--bgimg-color);
+   
+}
+
+.project-content{
+    padding: 10px 0 40px 68px;
+    margin-right: 0;
+} 
+
+
+.px-0{padding: 0 1.5rem;}
+.px-1{padding: 0 2.2rem;}
+.px-2{padding: 0 2.5rem;}
+
+.l-heading{
+    font-size: 36px;
+    line-height: 41px;
+    padding-bottom: 16px;
+}
+
+.m-heading{
+    font-size: 21px;
+    line-height: 28px;
+    padding-bottom: 18px;
+}
+
+.mini-heading{
+    font-size: 18px;
+    line-height: 24px;
+  
+}
+
+.s-heading{
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 19px;
+}
+
+.heading{
+    font-size: 37px;
+    line-height: 50px;
+    color: #FFFFFF;
+    width: 590px;
+}
+/* About Page */
+/* Nav-bar */
+#navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .container .logo{
+    margin-top: 60px;
+}
+#navbar .items-link{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#navbar .items-link li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+#navbar .items-link li a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    line-height: 52px;
+
+}
+
+#navbar .items-link li a.current{
+    color: #ffffff;
+}
+
+#navbar .items-link li a:hover{
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 1s ease;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #ffffff;
+    order: 4;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#check{
+    display: none;
+}
+
+
+/* Section 1 */
+#section .container{
+    display: flex;
+    margin-top: 178px;
+    
+}
+
+#section .container div{
+    flex: 1;
+}
+
+#section .container .img{
+    position: relative;
+    width: 100%;
+    height: 358px;
+    overflow: hidden;
+}
+#section .container .img .bg-img{
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#section .container .right{
+    width: 100%;
+}
+
+#section p, h2{
+    color: #ffffff;
+    margin-top: 34px;
+}
+
+#section p,
+#issue p{
+    font-size: 16px; 
+    letter-spacing: -0.03em;
+}
+
+#section h2,
+#issue h2{
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 31px;
+}
+
+
+#section .content{
+    background: var( --primary-color);
+    padding: 20px 5px 0 30px;
+    transform: translate(-115px, 0);
+    width: calc(100% + 115px);
+}
+
+#section .content .text-content,
+#issue .content .text-content,
+#projects .projects-grid .text-content{
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    opacity: 0.5;
+    font-weight: normal;
+}
+
+#section .button{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    display: inline-block;
+   
+}
+
+#section .button .btn,
+#issue .button .btn{
+    color: #FFFFFF;
+    font-family: "Muli";
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+#section .button .btn:after,
+#issue .button .btn:after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: blue;
+    display: inline-block;
+    background: url(../img/Arrow.svg) no-repeat center center/cover;
+    margin-left: 7px;
+}
+
+#section .img .num{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    z-index: 1;
+    margin: 20px 19px;
+    opacity: 0.7;
+}
+
+#section:nth-child(odd) .container{
+    flex-direction: row-reverse;
+    
+}
+
+#section:nth-child(odd) .container .img .num{
+    margin: 20px 19px 0 auto; 
+    display: block;
+}
+
+#section:nth-child(odd) .content{
+    transform: translate(0,0);
+}
+
+.margin-bottom{
+    margin-bottom: 170px;
+}
+
+
+
+/* issue page */
+/* Sectiotn 1 */
+#issue .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 99px;
+    
+}
+
+#issue .container p{
+    color: #ffffff;
+}
+
+#issue h2{
+    margin-bottom: 0;
+}
+
+#issue .content .text-content{
+    width: 592px;
+    
+}
+
+/* Section 2 */
+#issue .issue-container{
+    display: flex;
+    margin-top: 140px;
+}
+
+#issue .issue-container .text-content{
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+#issue .issue-container .name{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    padding-left: 98px;
+    padding-top: 21px;
+}
+#issue .issue-container img{
+    width: 555px;
+    height: 420px;
+    margin: 77px 114px 77px 0px;
+}
+
+#issue .issue-container h2{
+    font-size: 48px;
+    line-height: 60px;
+    width: 361px;
+}
+
+#issue .issue-container .text-content{
+    padding-left: 0;
+    width: 361px;
+    
+}
+
+#issue .button{
+    padding-top: 124px;
+    display: inline-block;
+    margin-bottom: 173px;
+   
+}
+
+
+.divider{
+    border-bottom: 1px solid #2C2C2C;
+    max-width: 1170px;
+    margin: 0 auto;
+    
+
+}
+
+
+/* Section 3 */    
+    #projects .projects-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+        margin-top: 120px;
+      
+    }
+
+
+    #projects .projects-grid .project-cards .project-card{
+        display: flex;
+        background: var(--bgimg-color);
+        margin-bottom: 140px;
+        
+    }
+
+    #projects .projects-grid .text{
+        max-width: 390px;
+        padding: 40px 68px;
+    }
+    
+
+    #projects .projects-grid .image{
+        max-width: 165px;
+    }
+    
+    #projects .projects-grid img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #projects .projects-grid .project-head{
+        margin-top: 0;
+        font-size: 27px;
+        line-height: 36px;
+    }
+    
+    #projects .projects-grid .text-content{
+        margin-top: 0;
+        padding-top: 20px;
+        color: #ffffff;
+    }
+
+    #projects .projects-grid .name{
+        padding-top: 56px;
+        font-size: 11px;
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+
+    #projects .project-cards:nth-child(even) {
+        margin-top: 310px;
+    }
+ 
+
+
+    /* More page */
+    /* Section 1 */
+
+    
+    #more .more-container .image{
+        width: 100%;
+        height: 100%;
+        margin-top: 186px
+    }
+    #more .more-container img{
+        width: 770px;
+        height: 420px;
+    }
+    #more .more-container .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #more .more-container .flex .items{
+        margin: 61px 0px;
+        color: #ffffff;
+    }
+
+    #more .more-container .date{
+        font-size: 16px;
+        line-height: 52px;
+        letter-spacing: -0.03em;
+    }
+
+    #more .more-container .name{
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* Section 2 */
+    #more .middle-container{
+        margin-top: 60px;
+    }
+    #more .middle-container h3{
+        color: #FFFFFF;
+    }
+
+    #more .middle-container p,
+    section .middle-container p{
+        font-size: 16px;
+        line-height: 35px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        font-weight: normal;
+        margin-bottom: 50px;
+    }
+    #more .middle-container .mini-heading{
+        padding-bottom: 19px;
+    }
+
+
+    #more .middle-container li{
+        color: #ffffff;
+        line-height: 28px;
+        padding-top: 30px;
+        list-style: none;
+    }
+
+    #more .middle-container li::before{
+        content: "";
+        width: 10.63px;
+        height: 10.63px;
+        background-color: #F2F2F2;
+        display: inline-block;
+        text-align: center;
+        margin-right: 17.5px;
+        background: url(../img/list-icon.svg);
+
+    }
+
+    #more .middle-container li:first-child{
+        padding-top: 0px;
+    } 
+
+    /* Section 3 */
+    #description img{
+        width: 27px;
+        height: 48px;
+        transform: translate(0, 59px);
+        margin-right: 7px;
+    } 
+    /* Section 4 */
+    #more .more-container .base1{
+        width: 470px;
+        height: 172px;
+    }
+
+    #more .more-container .base2{
+        width: 270px;
+        height: 172px;
+    } 
+
+    #more .more-container:nth-child(odd){
+        margin-top: 0;
+    }
+
+    /* Section 5 */
+    section .middle-container h3{
+        color: #ffffff;
+        margin-top: 56px;
+    }
+
+    section .middle-container ol{
+        margin-left: 15px;
+    }
+    section .middle-container li{
+        color: #ffffff;
+        padding-top: 30px;
+        line-height: 28px;
+    }
+
+    section .middle-container li:first-child{
+        padding-top: 0;
+    } 
+
+    section .middle-container .mini-heading{
+        padding-bottom: 19px;
+    }
+
+    section .share{
+      margin-bottom: 59px;
+    }
+
+    
+    section .media{
+        width: 20px;
+        height: 20px;
+        transform: translate(100px, -98px);
+        margin-right: 20px;
+    }
+    
+    /* Section 7 */
+    #read .container .read-head{
+        text-align: center;
+        margin-top: 170px;
+        font-size: 27px;
+        line-height: 52px;
+    }
+
+    #read .container .read-content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 26px;
+    }
+
+    #read .container .text .project-head{
+       width: 200px;
+    }
+
+    #read .container .text .text-content{
+      padding-top: 20px;
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: -0.01em;
+      opacity: 0.5;
+      font-weight: normal;
+      color: #ffffff;
+    }
+
+    #read .container .text .name{
+        padding-top: 56px;
+        font-size: 11px;
+        color: #ffffff;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 170px;
+    }
+
+
+
+
+
+
+    
+   
+
+
+/* Footer for the three pages */
+
+#footer{
+    background: #F2F2F2;
+    padding: 26px 0; 
+}
+
+#footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+#footer .container p{
+    font-size: 14px;
+    line-height: 32px;
+    align-self: center;
+    opacity: 0.6;
+ 
+}
+
+#footer .container .footer-img{
+  margin-top: 5px;
+ 
+}
+
+#footer .container .footer-content{
+    display: flex;
+    /* align-self: center; */
+}
+
+#footer .container .footer-content a{
+    padding-right: 20px;
+    color: #000000;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+
