@@ -58,6 +58,12 @@ img{
 .px-1{padding: 0 2.2rem;}
 .px-2{padding: 0 2.5rem;}
 
+.py-1{
+    padding-top: 52px;
+    padding-bottom: 19px;
+}
+
+
 .l-heading{
     font-size: 36px;
     line-height: 41px;
@@ -516,7 +522,7 @@ img{
     }
 
     /* Section 5 */
-    section .middle-container h3{
+    section .middle-container{
         color: #ffffff;
         margin-top: 56px;
     }
@@ -534,20 +540,19 @@ img{
         padding-top: 0;
     } 
 
-    section .middle-container .mini-heading{
-        padding-bottom: 19px;
-    }
-
-    section .share{
-      margin-bottom: 59px;
+    section .middle-container .social-media{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        margin-bottom: 59px;
     }
 
     
     section .media{
         width: 20px;
         height: 20px;
-        transform: translate(100px, -98px);
-        margin-right: 20px;
+        margin-left: 20px;
     }
     
     /* Section 7 */
