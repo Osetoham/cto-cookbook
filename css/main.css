@@ -500,6 +500,9 @@ img{
     } 
 
     /* Section 3 */
+    #description .middle-container{
+        margin-top: 0px;
+    }
     #description img{
         width: 27px;
         height: 48px;
